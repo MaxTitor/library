@@ -1,0 +1,31 @@
+body {
+    background: yellow;
+}
+
+h1 {
+    color: red;
+    font-size: 3rem;
+    text-decoration: underline;
+}
+
+.text-input {
+    width: 10vw;
+}
+
+#top {
+    text-align: center;
+}
+
+.content {
+    border: solid 1px black;
+    display: flex;
+    flex-direction: column;
+    padding: 1%;
+}
+
+.flex-item {
+    display: flex;
+    text-align: center;
+    width: 100%;
+    justify-content: center;
+}
