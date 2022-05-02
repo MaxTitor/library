@@ -16,18 +16,21 @@
         <div class="flex-item">
             <h2>Fill out the form below to add a book</h2>
         </div>
-        <div class="flex-item">
+        <div class="flex-item" style="padding-bottom: 3%;">
             <form action="">
                 <label for="">Title</label>
-                <input class="text-input" type="text" name="" id="">
+                <input class="text-input" type="text" name="" id="title">
                 <label for="">Author</label>
-                <input class="text-input" type="text" name="" id="">
+                <input class="text-input" type="text" name="" id="author">
                 <label for="">Pages</label>
-                <input class="text-input" type="number" name="" id="">
+                <input class="text-input" type="number" name="" id="pages">
                 <label for="">Have read</label>
-                <input type="checkbox" name="" id="">
+                <input type="checkbox" name="" id="readStatus">
             </form>
-            <button>Add</button>
+            <button id="add">Add</button>
+        </div>
+        <div class="flex-item-2">
+            <ol id="library"></ol>
         </div>
     </div>
 

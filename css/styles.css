@@ -9,7 +9,7 @@ h1 {
 }
 
 .text-input {
-    width: 10vw;
+    width: 7vw;
 }
 
 #top {
@@ -28,4 +28,20 @@ h1 {
     text-align: center;
     width: 100%;
     justify-content: center;
+}
+
+.flex-item-2 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.book-li {
+    border-top: solid 1px black;
+    padding-top: 1%;
+    margin-top: 1%;
+}
+
+.book-li > h2, h3, h4, p {
+    margin: 8px;
 }
