@@ -24,13 +24,15 @@ let addBookButton = document.querySelector("#add");
 
 addBookButton.addEventListener("click", function(){
     let newBook = "";
-    if (bookRead.checked) {
-        newBook = new Book(bookTitle.value, bookAuthor.value, bookPages.value, true);
-    } else if (bookRead.checked === false) {
-        newBook = new Book(bookTitle.value, bookAuthor.value, bookPages.value, false);
+    if (bookTitle.value !== "" && bookAuthor.value !== "" && bookPages.value !== "") {
+        if (bookRead.checked) {
+            newBook = new Book(bookTitle.value, bookAuthor.value, bookPages.value, true);
+        } else if (bookRead.checked === false) {
+            newBook = new Book(bookTitle.value, bookAuthor.value, bookPages.value, false);
+        }
+        addBookToLibrary(newBook);
+        updateList();
     }
-    addBookToLibrary(newBook);
-    updateList();
 })
 
 // HTML info
